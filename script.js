@@ -1,3 +1,17 @@
+window.addEventListener('DOMContentLoaded', function() {
+  var scrollMe = document.querySelector('.scroll-me');
+  var windowWidth = window.innerWidth;
+
+  if (windowWidth < 1000) {
+    scrollMe.style.opacity = '1';
+  }
+
+  window.addEventListener('scroll', function() {
+    scrollMe.style.display = 'none';
+  });
+});
+
+
 //home
 const home = new IntersectionObserver(entries => {
     entries.forEach(entry => {
