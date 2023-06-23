@@ -239,7 +239,7 @@ function bookShelf() {
   for (var i = 0; i < 2; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = box.getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 100;
  
     if (elementTop < windowHeight - elementVisible) {
       box.classList.add("bookshelf-animation");
@@ -258,7 +258,7 @@ function bookShelf() {
   for (var i = 0; i < 2; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = box.getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 100;
  
     if (elementTop < windowHeight - elementVisible) {
       box.classList.add("absensi-animation");
