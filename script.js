@@ -134,6 +134,25 @@ function bar4() {
 }
 window.addEventListener("scroll", bar4);
 
+//bar
+function bar5() {
+ var box = document.querySelector(".bar-5");
+
+ for (var i = 0; i < 2; i++) {
+   var windowHeight = window.innerHeight;
+   var elementTop = box.getBoundingClientRect().top;
+   var elementVisible = 150;
+
+   if (elementTop < windowHeight - elementVisible) {
+     box.classList.add("bar-5-animation");
+   } 
+   // else {
+   //   box.classList.remove("bar-4-animation");
+   // }
+ }
+}
+window.addEventListener("scroll", bar5);
+
 
 //projek
 function projek() {
