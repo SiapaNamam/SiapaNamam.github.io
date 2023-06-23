@@ -266,6 +266,7 @@
   animation: bar-4 2s;
   opacity: 1;
 }
+
 @keyframes bar-5 {
   from {
     width: 0;
@@ -328,210 +329,236 @@
   padding-top: 1.5vw;
   color: white;
   font-weight: 900;
-
+  opacity: 0;
   transform: rotate(-30deg)
 }
 
 .box-animation {
   animation: box 2s;
+  opacity: 1;
 }
 
 
+/* projek */
+a {
+  text-decoration: none;
+}
 
-  /* projek */
-  a{
-    text-decoration: none;
-  }
-  .projek-container{
-    width: 100%;
-    height: 1200px;
-    background-color: #252525;
-    overflow: hidden;
-  }
-  
-  .projek-grid{
-    overflow: hidden;
-  
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    width: 1650px;
-    height: 1000px;
-  
-    position: relative;
-    left:120px;
-    top: 50px;
-  
-  }
-  
-  @keyframes judul {
-    from{
-      left: 2000px;
-    }
-  
-    to{
-      left: 0;
-    }
-  }
-  
-  .judul{
-    position: relative;
-  
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-color: #F0EEED;
-    border-radius: 50px;
-  
-    font-size: 100px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
+.projek-container {
+  width: 100%;
+  background-color: #181823;
+  overflow-y: hidden;
+  height: 100vw;
+}
+
+.projek-grid {
+  display: grid;
+  gap: 2vw;
+  max-width: 200vw;
+  margin: 0 auto;
+  padding: 8vw;
+}
+
+@keyframes judul {
+  from {
+    left: 2000px;
   }
 
-  .judul-animation{
-    animation: judul 1.5s;
-    opacity: 1;
+  to {
+    left: 0;
   }
-  
-  @keyframes administration-cafe{
-    from{
-      left: -2000px;
-    }
-  
-    to{
-      left: 0;
-    }
-  }
-  
-  .administration-cafe{
-    position: relative;
-  
-    grid-column: 2/3;
-    grid-row: 1/3;
-    background-color: #F0A04B;
-    border-radius: 50px;
-  
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  
-    opacity: 0;
+}
+
+.judul {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #F0EEED;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  padding: 3vw;
+}
+
+.judul-animation {
+  animation: judul 1.5s;
+  opacity: 1;
+}
+
+@keyframes administration-cafe {
+  from {
+    left: -2000px;
   }
 
-  .administration-cafe-animation{
-    animation: administration-cafe 1.5s;
-    opacity: 1;
+  to {
+    left: 0;
   }
-  
-  .habit-figma{
-    position: relative;
-  
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-color: #EB455F;
-    border-radius: 50px;
-  
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    opacity: 0;
-    
-  }
-  
-  .habit-figma-animation{
-    animation: judul 1.5s;
-    opacity: 1;
+}
+
+.administration-cafe {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-color: #F0A04B;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  padding: 2vw;
+}
+
+.administration-cafe-animation {
+  animation: administration-cafe 1.5s;
+  opacity: 1;
+}
+
+.habit-figma {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #EB455F;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
+
+.habit-figma-animation {
+  animation: judul 1.5s;
+  opacity: 1;
+}
+
+@keyframes habit {
+  from {
+    top: 2000px;
   }
 
-  @keyframes habit {
-    from{
-      top: 2000px;
-    }
-  
-    to{
-      top: 0px;
-    }
+  to {
+    top: 0px;
   }
-  
-  .habit-app{
-    position: relative;
-  
-    grid-column: 1/3;
-    grid-row: 3/4;
-    background-color: #537FE7;
-    border-radius: 50px;
-  
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    opacity: 0;
-  }
+}
 
-  .habit-app-animation{
-    animation: habit 1.5s;
-    opacity: 1;
-  }
+.habit-app {
+  position: relative;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-color: #537FE7;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
 
-  .bookshelf{
-    position: relative;
-  
-    grid-column: 1/2;
-    grid-row: 4/6;
-    background-color: #FFF4E0;
-    border-radius: 50px;
-  
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #252525;
-    text-align: center;
-    opacity: 0;
-    
-  }
+.habit-app-animation {
+  animation: habit 1.5s;
+  opacity: 1;
+}
 
-  .bookshelf-animation{
-    animation: judul 1.5s;
-    opacity: 1;
-  }
+.bookshelf {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 4/6;
+  background-color: #FFF4E0;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #252525;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
 
-  .absensi{
-    position: relative;
-  
-    grid-column: 2/3;
-    grid-row: 4/6;
-    background-color: #FF0303;
-    border-radius: 50px;
-  
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    opacity: 0;
-  }
+.bookshelf-animation {
+  animation: judul 1.5s;
+  opacity: 1;
+}
 
-  .absensi-animation{
-    animation: administration-cafe 1.5s;
-    opacity: 1;
-  }
+.absensi {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 4/6;
+  background-color: #FF0303;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
 
-  
-  
+.absensi-animation {
+  animation: administration-cafe 1.5s;
+  opacity: 1;
+}
+
+.tally-task {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 6/7;
+  background-color: #FF0303;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
+
+.tally-task-animation {
+  animation: judul 1.5s;
+  opacity: 1;
+}
+
+.game {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  background-color: #FFF4E0;
+  border-radius: 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #252525;
+  text-align: center;
+  opacity: 0;
+  padding: 3vw;
+}
+
+.game-animation {
+  animation: administration-cafe 1.5s;
+  opacity: 1;
+}

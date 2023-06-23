@@ -270,6 +270,43 @@ function bookShelf() {
  }
  window.addEventListener("scroll", absensi);
  
+function tallyTask() {
+  var box = document.querySelector(".tally-task");
+ 
+  for (var i = 0; i < 2; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = box.getBoundingClientRect().top;
+    var elementVisible = 50;
+ 
+    if (elementTop < windowHeight - elementVisible) {
+      box.classList.add("tally-task-animation");
+    } 
+    // else {
+    //   box.classList.remove("bar-4-animation");
+    // }
+  }
+ }
+ window.addEventListener("scroll", tallyTask);
+
+
+ function game() {
+  var box = document.querySelector(".game");
+ 
+  for (var i = 0; i < 2; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = box.getBoundingClientRect().top;
+    var elementVisible = 50;
+ 
+    if (elementTop < windowHeight - elementVisible) {
+      box.classList.add("game-animation");
+    } 
+    // else {
+    //   box.classList.remove("bar-4-animation");
+    // }
+  }
+ }
+ window.addEventListener("scroll", game);
+ 
 
 
 
